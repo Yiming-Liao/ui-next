@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+/* 無限滾動LOGO to left  */
+@keyframes scrollLeft {
+  to {
+    left: -100px;
+  }
+}
+
+.scroll-left {
+  left: max(calc((150px) * 8), 100%);
+  animation: scrollLeft 30s linear infinite;
+}
+
+.grayscale {
+    filter: grayscale(100%);
+}
+
+/*  無限滾動LOGO to right */
+@keyframes scrollRight {
+    to {
+      right: -100px;
+    }
+  }
+  
+  .scroll-right {
+    right: max(calc((150px) * 8), 100%);
+    animation: scrollRight 30s linear infinite;
+  }
